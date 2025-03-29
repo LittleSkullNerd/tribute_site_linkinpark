@@ -1,0 +1,267 @@
+/* Configuração geral */
+html {
+  font-family: "Oswald", sans-serif;
+  background-image: url("/img/FromZeroWallpaper2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estrutura principal */
+.container {
+  max-width: 68.75rem;
+  background-color: #fff;
+  border: 0.4rem solid #2c3a3c;
+  outline: 0.4rem solid #995178;
+  border-radius: 5rem;
+  margin: 3.125rem auto;
+  padding: 1.25rem 3.125rem;
+  position: relative;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+}
+
+/* Navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #777;
+}
+
+nav a:hover::after {
+  transform: translateY(0);
+}
+
+/* Título principal */
+.main-title {
+  font-size: 4rem;
+  display: inline-block;
+  border-bottom: 0.3rem solid #000;
+  padding-bottom: 0.01rem;
+  margin-top: 1.1rem;
+}
+
+.main-paragraph {
+  font-style: italic;
+  font-family: "Arial", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Imagens destacadas */
+.featured-image,
+.featured-image2 {
+  text-align: center;
+  margin-top: 1.875rem;
+}
+
+.image1,
+.image2 {
+  width: 100%;
+  max-width: 50rem;
+  box-sizing: border-box;
+  outline: 0.3rem solid #2c3a3c;
+  border: 0.3rem solid #995178;
+  border-radius: 5rem;
+}
+
+/* Seções do site */
+.biography-container,
+.curiosities-container,
+.moreinfo-container {
+  padding: 1.5625rem 0;
+  margin: 1.5625rem 0;
+  border-top: 0.2rem dashed #e49dc3;
+  border-bottom: 0.2rem dashed #e49dc3;
+}
+
+.biography-container h2,
+.curiosities-container h2 {
+  font-size: 2.3rem;
+}
+
+.biography-container p,
+.curiosities-container li,
+.moreinfo-container p {
+  font-family: "Arial", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.curiosities-container li {
+  margin-bottom: 1rem;
+}
+
+.moreinfo-container a {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.moreinfo-container a:hover {
+  color: #0056b3;
+}
+
+/* Citações */
+.quotes-container {
+  background-color: #995178;
+  padding: 1.875rem;
+  outline: 0.3rem solid #2c3a3c;
+  border: 0.3rem solid #eba9cc;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 5);
+}
+
+.quotes-container blockquote {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+
+.quotes-container p {
+  font-style: italic;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Link para vídeo */
+.center-container {
+  text-align: center;
+}
+
+.clip-link {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.clip-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.clip-link:hover,
+.clip-link:focus {
+  color: #777;
+}
+
+.clip-link:hover::after {
+  transform: translateY(0);
+}
+
+/* Voltar ao topo */
+.back-to-top {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.back-to-top a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.back-to-top a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  nav a {
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+  }
+
+  .quotes-container {
+    font-size: 1.25rem;
+    padding: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .quotes-container blockquote {
+    font-size: 1.5rem;
+  }
+}
